@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ServeU</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type=text/css href="asset/css/serveu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+        <img src="https://scontent.fbud6-4.fna.fbcdn.net/v/t1.15752-9/329951388_591685032980888_7996538800589534608_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ODgCxOQCO48AX_iMoui&_nc_ht=scontent.fbud6-4.fna&oh=03_AdQftonF6iQchUbcoqh0uCExe-kt-B0UfWqP0E-r01fV5Q&oe=644694C9" alt="ServeU logo" class="logo" style="position: relative; top:0px; left: 0px;">
+			</div>
+		</div>
+		<div class="search-bar">
+			<input type="text" class="form-control" placeholder="Search">
+		</div>
+		<div class="row options">
+			<div class="col-md-12">
+                <a href="#" class="btn btn-info btn-block option-btn electrician" onclick=openFilters()>Electrician <span class="arrow">&raquo;</span></a>
+                <a href="#" class="btn btn-info btn-block option-btn Movers" onclick=openFilters()>Movers <span class="arrow">&raquo;</span></a>
+                <a href="#" class="btn btn-info btn-block option-btn Mason" onclick=openFilters()>Mason <span class="arrow">&raquo;</span></a>
+                <a href="#" class="btn btn-info btn-block option-btn carpenter" onclick=openFilters()>Carpenter <span class="arrow">&raquo;</span></a>
+                <a href="#" class="btn btn-info btn-block option-btn Painter" onclick=openFilters()>Painter <span class="arrow">&raquo;</span></a>
+                <a href="#" class="btn btn-info btn-block option-btn Gardener" onclick=openFilters()>Gardener <span class="arrow">&raquo;</span></a>
+			</div>
+		</div>
+    <div class="modal" id="filter-modal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Filters</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <button class="btn btn-primary filter-option-btn">Price</button>
+            <button class="btn btn-primary filter-option-btn">Reviews</button>
+            <button class="btn btn-primary filter-option-btn">Location</button>
+            <button class="btn btn-primary filter-option-btn">Service Type</button>
+            <button class="btn btn-primary filter-option-btn">Availability</button>
+            <button class="btn btn-primary filter-option-btn">Experience</button>
+            <button class="btn btn-primary filter-option-btn">Language</button>
+            <button class="btn btn-primary filter-option-btn">Gender</button>
+            <button class="btn btn-primary filter-option-btn">Certification</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal" onclick=redirectToPage()>Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openFilters() {
+        $("#filter-modal").modal();
+      }
+
+      function redirectToPage() {
+      window.location.href = "plumbers.html";
+      }
+    </script>
+    
+</body>
+</html>

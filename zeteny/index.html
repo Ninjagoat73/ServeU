@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="asset/css/website.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <img src="https://scontent.fbud6-3.fna.fbcdn.net/v/t1.15752-9/336377520_163492516583068_3941284016407633006_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=RpPpEVChp08AX8N_hkZ&_nc_ht=scontent.fbud6-3.fna&oh=03_AdTj_wo7eTU9i4wDNDoz8uCfHaIPTU_zxkrlXjHdz5xM_Q&oe=64466F22" alt="ServeU logo" class="logo" style="position: relative; top:40px">
+    <div class="container">
+      <h2 style="color: #ffffff; text-align: center; font-size: 75; position: relative;  top:65px;">Registration</h2>
+      <form id="registration-form"  method="post">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="region">Region:</label>
+          <select class="form-control" id="region" name="region" required>
+            <option value="">Select a region</option>
+            <option value="North America">Bács-Kiskun</option>
+            <option value="South America">Baranya</option>
+            <option value="Europe">Békés</option>
+            <option value="Asia">Borsod-Abaúj-Zemplén</option>
+            <option value="Australia">Budapest</option>
+            <option value="Africa">Csongrád-Csanád</option>
+            <option value="Australia">Fejér</option>
+            <option value="Australia">Győr-Moson-Sopron</option>
+            <option value="Australia">Hajdú-Bihar</option>
+            <option value="Australia">Heves</option>
+            <option value="Australia">Jász-Nagykun-Szolnok</option>
+            <option value="Australia">Komárom-Esztergom</option>
+            <option value="Australia">Nógrád</option>
+            <option value="Australia">Pest</option>
+            <option value="Australia">Somogy</option>
+            <option value="Australia">Szabolcs-Szatmár-Bereg</option>
+            <option value="Australia">Tolna</option>
+            <option value="Australia">Vas</option>
+            <option value="Australia">Veszprém</option>
+            <option value="Australia">Zala</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="terms" required> I agree to the terms of service</label>
+        </div>
+        <div class="form-group">
+            <label for="custom">Desired Services:</label>
+            <div class="custom-input">
+              <div class="custom-input-row">
+                <div class="custom-input-box" style="background-color: #ffffff; color: #000000; border-radius: 10px;"><img src="asset/image/Electrician.jpg"></div>
+                <div class="custom-input-box" style="background-color: #ffffff; color: #000000; border-radius: 10px;"><img src="asset/image/plumber.jpg"></div>
+                <div class="custom-input-box" style="background-color: #ffffff; color: #000000; border-radius: 10px;"><img src="asset/image/movers.jpg"></div>
+              </div>
+              <div class="custom-input-row">
+                <div class="custom-input-box" style="background-color: #ffffff; color: #000000; border-radius: 10px;"><img src="asset/image/gardener.jpg"></div>
+                <div class="custom-input-box" style="background-color: #ffffff; color: #000000; border-radius: 10px;"><img src="asset/image/masonry.jpg"></div>
+                <div class="custom-input-box" style="background-color: #ffffff; color: #000000; border-radius: 10px;"><img src="asset/image/carpenter.jpg"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+          <button id="submit-button"  type="submit" class="btn btn-primary">Submit</button>
+          </div>
+      </form>
+    </div>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
+</html>
