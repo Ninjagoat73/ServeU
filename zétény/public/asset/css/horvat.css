@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  .gradient-bg {
+    background: linear-gradient(to bottom,  #d5caa7, #d5caa7) ;
+    min-height: 100vh;
+  }
+  
+  .jumbotron {
+    background-color: #787878;
+    margin-bottom: 0px;
+    padding: 2rem;
+    border-radius: 0px;
+    color: white;
+  }
+  
+  .pricing, .reviews, .location {
+    padding: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .pricing {
+    background-color: #343A40;
+  }
+  
+  .reviews {
+    background-color: #343A40;
+  }
+  
+  .location {
+    background-color: #343A40;
+  }
+
+  #mapid {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .book-appointment {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+/* Hide appointment window by default */
+.hidden {
+  display: none;
+}
+.modal {
+    z-index: 1500;
+  }
+  
+  .modal-backdrop {
+    z-index: 1400;
+  }
+  .modal-dialog {
+    width: 80%; /* change this value to your desired width */
+    max-width: 800px; /* optional: set a maximum width to ensure it fits on smaller screens */
+  }
+
+
+  #done-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
